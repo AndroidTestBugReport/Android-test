@@ -159,20 +159,6 @@ class DQNAgentClass:
     def replay(self, batch_size, lastStateStepNum, Feature2Digit, word2VecModel,word2Idx, testLastTuple, recordMiddleList):
         
         
-        '''
-        minibatch0=self.memory[lastStateStepNum]
-        minibatch1=self.memory[random.sample(self.memory.keys(),1)[0]]
-        
-        
-        if len(minibatch0)>batch_size:
-            minibatch0=random.sample(minibatch0,batch_size-1)
-            minibatch0.append(self.memory[lastStateStepNum][-1])
-            
-            
-            
-        if len(minibatch1)>batch_size:
-            minibatch1=random.sample(minibatch1,batch_size) 
-        '''
         
         minibatch0=[]
         minibatch0.append(testLastTuple)
@@ -206,18 +192,11 @@ class DQNAgentClass:
             
             Qvalue = (reward + self.gamma * np.amax(self.model.predict([currentTextFeatueTran,currentSameFeatureTran,currentSimilarFeatureTran])[0]))
             #Qvalue = ((1-self.gamma)*reward + self.gamma * np.amax(self.model.predict([currentTextFeatueTran,currentSimilarFeatureTran])[0]))
-            '''
-            if Qvalue>10:
-                print("bingo")
-            '''
             
             target_f = self.model.predict([lastTextFeatueTran,lastSameFeatureTran,lastSimilarFeatureTran])[0]
             
-            a=target_f.copy()
             
             target_f[action]=Qvalue
-            
-            b=target_f.copy()
             
             recordMiddleList.append((a,b,Qvalue))
                         
@@ -228,16 +207,6 @@ class DQNAgentClass:
             
             
             targets_f.append(target_f)
-            '''
-            lastSameFeatureTran[0][5]=[2]
-            lastSimilarFeatureTran[0][5]=[2]
-            
-            lastSameFeatureTran[0][3]=[2]
-            lastSimilarFeatureTran[0][3]=[2]
-            
-            test2= self.model.predict([lastTextFeatueTran,lastSameFeatureTran,lastSimilarFeatureTran])[0]
-            print(test2)
-            '''
         
         history0 = self.model.fit(states, np.array(targets_f), epochs=30, verbose=0)
         
