@@ -197,9 +197,7 @@ class DQNAgentClass:
             
             
             target_f[action]=Qvalue
-            
-            recordMiddleList.append((a,b,Qvalue))
-                        
+                                    
             states[0].append(lastTextFeatue)
             states[1].append(lastSameFeature)
             states[2].append(lastSimilarFeature)
