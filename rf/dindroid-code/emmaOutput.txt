@@ -1,0 +1,23 @@
+[EMMA v2.0.5312 report, generated Sun Aug 23 21:25:01 EDT 2020]
+-------------------------------------------------------------------------------
+OVERALL COVERAGE SUMMARY:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+13%  (7/52)!	6%   (22/352)!	4%   (253/6675)!	5%   (69/1523)!	all classes
+
+OVERALL STATS SUMMARY:
+
+total packages:	4
+total classes:	52
+total methods:	352
+total executable files:	22
+total executable lines:	1523
+
+COVERAGE BREAKDOWN BY PACKAGE:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+0%   (0/6)!	0%   (0/52)!	0%   (0/1374)!	0%   (0/287)!	campyre.java
+0%   (0/1)!	0%   (0/7)!	0%   (0/370)!	0%   (0/58)!	lgpl.haustein
+12%  (5/41)!	5%   (14/271)!	4%   (190/4552)!	5%   (51/1085)!	campyre.android
+50%  (2/4)!	36%  (8/22)!	17%  (63/379)!	19%  (18/93)!	campyre.android.EmmaInstrument
+-------------------------------------------------------------------------------

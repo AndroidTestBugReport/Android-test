@@ -1,0 +1,596 @@
+--------- beginning of /dev/log/main
+D/UIAutomatorStub( 2287): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9040, content-length=111, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": ["natural"], "jsonrpc": "2.0", "method": "setOrientation", "id": "2d8abdbe4e8d4e53f725ea8a8683d916"}}
+D/dalvikvm( 2352): GC_CONCURRENT freed 903K, 16% free 5559K/6584K, paused 0ms+0ms, total 4ms
+W/dalvikvm( 2352): threadid=11: thread exiting with uncaught exception (group=0xa4d02b20)
+D/gralloc_ranchu( 1135): gralloc_alloc: Creating ashmem region of size 716800
+D/        ( 1550): HostConnection::get() New Host Connection established 0xb85b6330, tid 1653
+W/        ( 1550): Unrecognized GLES max version string in extensions: ANDROID_EMU_CHECKSUM_HELPER_v1 
+D/dalvikvm( 2352): GC_CONCURRENT freed 829K, 16% free 5553K/6584K, paused 0ms+2ms, total 6ms
+--------- beginning of /dev/log/system
+E/AndroidRuntime( 2352): FATAL EXCEPTION: Thread-94
+E/AndroidRuntime( 2352): Process: com.gluegadget.hndroid, PID: 2352
+E/AndroidRuntime( 2352): java.lang.ArrayIndexOutOfBoundsException: length=0; index=0
+E/AndroidRuntime( 2352): 	at com.gluegadget.hndroid.Main.refreshNews(Main.java:508)
+E/AndroidRuntime( 2352): 	at com.gluegadget.hndroid.Main.refreshNews(Main.java:434)
+E/AndroidRuntime( 2352): 	at com.gluegadget.hndroid.Main.access$000(Main.java:47)
+E/AndroidRuntime( 2352): 	at com.gluegadget.hndroid.Main$1.run(Main.java:98)
+E/AndroidRuntime( 2352): 	at java.lang.Thread.run(Thread.java:841)
+W/ActivityManager( 1550):   Force finishing activity com.gluegadget.hndroid/.Main
+D/dalvikvm( 1550): GC_FOR_ALLOC freed 1363K, 38% free 8044K/12900K, paused 5ms, total 5ms
+D/EGL_emulation( 1874): eglMakeCurrent: 0xb84b4940: ver 2 0
+E/EGL_emulation( 1874): tid 1874: eglSurfaceAttrib(1199): error 0x3009 (EGL_BAD_MATCH)
+W/HardwareRenderer( 1874): Backbuffer cannot be preserved
+D/gralloc_ranchu( 1135): gralloc_alloc: Creating ashmem region of size 651264
+D/dalvikvm( 1874): GC_FOR_ALLOC freed 3950K, 34% free 10106K/15232K, paused 2ms, total 3ms
+I/dalvikvm-heap( 1874): Grow heap (frag case) to 13.297MB for 3483660-byte allocation
+D/dalvikvm( 1874): GC_FOR_ALLOC freed <1K, 12% free 13507K/15232K, paused 3ms, total 3ms
+D/dalvikvm( 1874): GC_CONCURRENT freed 4K, 12% free 13502K/15232K, paused 0ms+0ms, total 3ms
+D/        ( 1135): HostConnection::get() New Host Connection established 0xb83ee9b0, tid 2377
+W/        ( 1135): Unrecognized GLES max version string in extensions: ANDROID_EMU_CHECKSUM_HELPER_v1 
+E/WindowManager( 2352): 
+E/WindowManager( 2352): android.view.WindowLeaked: Activity com.gluegadget.hndroid.Main has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{a4fe0fc8 V.E..... R.....ID 0,0-490,230} that was originally added here
+E/WindowManager( 2352): 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:348)
+E/WindowManager( 2352): 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:248)
+E/WindowManager( 2352): 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+E/WindowManager( 2352): 	at android.app.Dialog.show(Dialog.java:286)
+E/WindowManager( 2352): 	at android.app.ProgressDialog.show(ProgressDialog.java:116)
+E/WindowManager( 2352): 	at android.app.ProgressDialog.show(ProgressDialog.java:99)
+E/WindowManager( 2352): 	at com.gluegadget.hndroid.Main.onCreate(Main.java:95)
+E/WindowManager( 2352): 	at android.app.Activity.performCreate(Activity.java:5231)
+E/WindowManager( 2352): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+E/WindowManager( 2352): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)
+E/WindowManager( 2352): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)
+E/WindowManager( 2352): 	at android.app.ActivityThread.access$800(ActivityThread.java:135)
+E/WindowManager( 2352): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)
+E/WindowManager( 2352): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E/WindowManager( 2352): 	at android.os.Looper.loop(Looper.java:136)
+E/WindowManager( 2352): 	at android.app.ActivityThread.main(ActivityThread.java:5017)
+E/WindowManager( 2352): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/WindowManager( 2352): 	at java.lang.reflect.Method.invoke(Method.java:515)
+E/WindowManager( 2352): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+E/WindowManager( 2352): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+E/WindowManager( 2352): 	at dalvik.system.NativeStart.main(Native Method)
+D/dalvikvm( 2287): GC_FOR_ALLOC freed 256K, 16% free 3547K/4176K, paused 3ms, total 3ms
+D/UIAutomatorStub( 2287): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9040, content-length=80, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"jsonrpc": "2.0", "method": "wakeUp", "id": "87f15b1096ac0eba1df11a62f6d67e04"}}
+D/dalvikvm( 2287): GC_FOR_ALLOC freed 272K, 17% free 3486K/4176K, paused 4ms, total 5ms
+D/UIAutomatorStub( 2287): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9040, content-length=102, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": ["back"], "jsonrpc": "2.0", "method": "pressKey", "id": "47b6975560b18f441c8f2c48f2b7438d"}}
+D/gralloc_ranchu( 1135): gralloc_alloc: Creating ashmem region of size 651264--------- beginning of /dev/log/main
+D/UIAutomatorStub( 2284): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9049, content-length=111, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": ["natural"], "jsonrpc": "2.0", "method": "setOrientation", "id": "7a077487bee16128df919800076c4a85"}}
+D/dalvikvm( 2284): GC_FOR_ALLOC freed 198K, 15% free 3549K/4172K, paused 2ms, total 2ms
+D/UIAutomatorStub( 2284): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9049, content-length=80, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"jsonrpc": "2.0", "method": "wakeUp", "id": "f2a5c1cfb5102b9281240f7ddf1ff3c4"}}
+D/dalvikvm( 2284): GC_FOR_ALLOC freed 265K, 17% free 3490K/4184K, paused 1ms, total 1ms
+D/UIAutomatorStub( 2284): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9049, content-length=100, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": [517, 94], "jsonrpc": "2.0", "method": "click", "id": "7e888b23cd8dbffbcb817d03d903b74d"}}
+D/InteractionController( 2284): clickNoSync (517, 94)
+D/AndroidRuntime( 2311): 
+D/AndroidRuntime( 2311): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2311): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2311): CheckJNI is ON
+D/dalvikvm( 2311): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2311): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2311): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2311): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2311): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2311): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2311): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2311): failed to load memtrack module: -2
+D/AndroidRuntime( 2311): Calling main entry com.android.commands.input.Input
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_I, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_I, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_N, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_N, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_P, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_P, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_U, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/LatinIME:LogUtils( 1719): Dictionary info: dictionary = contacts.en_US.dict ; version = ? ; date = ?
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_U, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_SPACE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_SPACE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/LatinIME:LogUtils( 1719): Dictionary info: dictionary = main:en ; version = 42 ; date = 1381226429
+I/LatinIME:LogUtils( 1719): Dictionary info: dictionary = userunigram.en_US.dict ; version = ? ; date = ?
+D/dalvikvm( 1719): GC_CONCURRENT freed 346K, 13% free 3245K/3720K, paused 1ms+1ms, total 3ms
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_E, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_E, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_X, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_X, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+D/dalvikvm( 1719): GC_FOR_ALLOC freed 301K, 14% free 3312K/3824K, paused 2ms, total 3ms
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_APOSTROPHE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_APOSTROPHE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_SHIFT_LEFT, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_LEFT_BRACKET, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_LEFT_BRACKET, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_SHIFT_LEFT, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_PERIOD, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_PERIOD, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_4, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_4, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_5, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_5, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_6, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_6, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_0, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_0, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_2, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_2, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+I/Input   ( 2311): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75367, downTime=75367, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2311): Shutting down VM
+D/dalvikvm( 2311): GC_CONCURRENT freed 212K, 28% free 555K/772K, paused 0ms+0ms, total 1ms
+D/UIAutomatorStub( 2284): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9049, content-length=101, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": [384, 590], "jsonrpc": "2.0", "method": "click", "id": "ec2b4c5815a9abeee14dbc24c4d80717"}}
+D/InteractionController( 2284): clickNoSync (384, 590)
+D/dalvikvm( 2284): GC_FOR_ALLOC freed 294K, 16% free 3550K/4184K, paused 3ms, total 3ms
+D/UIAutomatorStub( 2284): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9049, content-length=117, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": [null, 1000], "jsonrpc": "2.0", "method": "waitForWindowUpdate", "id": "78845fe6bc4e9b96785d6717e88abef0"}}
+E/SoundPool( 1549): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1549): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1549): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1549): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1549): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1549): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1549): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1549): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1549): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1549): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1549): error loading /system/media/audio/ui/KeypressStandard.ogg
+W/AudioService( 1549): Soundpool could not load file: /system/media/audio/ui/KeypressStandard.ogg
+E/SoundPool( 1549): error loading /system/media/audio/ui/KeypressSpacebar.ogg
+W/AudioService( 1549): Soundpool could not load file: /system/media/audio/ui/KeypressSpacebar.ogg
+E/SoundPool( 1549): error loading /system/media/audio/ui/KeypressDelete.ogg
+W/AudioService( 1549): Soundpool could not load file: /system/media/audio/ui/KeypressDelete.ogg
+E/SoundPool( 1549): error loading /system/media/audio/ui/KeypressReturn.ogg
+W/AudioService( 1549): Soundpool could not load file: /system/media/audio/ui/KeypressReturn.ogg
+E/SoundPool( 1549): error loading /system/media/audio/ui/KeypressInvalid.ogg
+W/AudioService( 1549): Soundpool could not load file: /system/media/audio/ui/KeypressInvalid.ogg
+W/AudioService( 1549): onLoadSoundEffects(), Error -1 while loading samples
+--------- beginning of /dev/log/system
+I/ActivityManager( 1549): START u0 {act=com.google.android.photostream.FLICKR_STREAM cmp=com.google.android.photostream/.PhotostreamActivity (has extras)} from pid 2217
+D/dalvikvm( 2217): GC_CONCURRENT freed 171K, 7% free 4207K/4508K, paused 1ms+2ms, total 4ms
+V/PhoneStatusBar( 1627): setLightsOn(true)
+D/gralloc_ranchu( 1135): gralloc_alloc: Creating ashmem region of size 2527232
+D/        ( 1135): HostConnection::get() New Host Connection established 0xb8ec6fb0, tid 2234
+W/        ( 1135): Unrecognized GLES max version string in extensions: ANDROID_EMU_CHECKSUM_HELPER_v1 
+W/dalvikvm( 2217): threadid=14: thread exiting with uncaught exception (group=0xa4d26b20)
+E/AndroidRuntime( 2217): FATAL EXCEPTION: UserTask #1
+E/AndroidRuntime( 2217): Process: com.google.android.photostream, PID: 2217
+E/AndroidRuntime( 2217): java.lang.RuntimeException: An error occured while executing doInBackground()
+E/AndroidRuntime( 2217): 	at com.google.android.photostream.UserTask$3.done(UserTask.java:203)
+E/AndroidRuntime( 2217): 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+E/AndroidRuntime( 2217): 	at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+E/AndroidRuntime( 2217): 	at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+E/AndroidRuntime( 2217): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+E/AndroidRuntime( 2217): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+E/AndroidRuntime( 2217): 	at java.lang.Thread.run(Thread.java:841)
+E/AndroidRuntime( 2217): Caused by: java.lang.IllegalStateException: Scheme 'https' not registered.
+E/AndroidRuntime( 2217): 	at org.apache.http.conn.scheme.SchemeRegistry.getScheme(SchemeRegistry.java:80)
+E/AndroidRuntime( 2217): 	at org.apache.http.impl.conn.ProxySelectorRoutePlanner.determineRoute(ProxySelectorRoutePlanner.java:157)
+E/AndroidRuntime( 2217): 	at org.apache.http.impl.client.DefaultRequestDirector.determineRoute(DefaultRequestDirector.java:596)
+E/AndroidRuntime( 2217): 	at org.apache.http.impl.client.DefaultRequestDirector.handleResponse(DefaultRequestDirector.java:938)
+E/AndroidRuntime( 2217): 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:475)
+E/AndroidRuntime( 2217): 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+E/AndroidRuntime( 2217): 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:509)
+E/AndroidRuntime( 2217): 	at com.google.android.photostream.Flickr.executeRequest(Flickr.java:1206)
+E/AndroidRuntime( 2217): 	at com.google.android.photostream.Flickr.getPublicPhotos(Flickr.java:823)
+E/AndroidRuntime( 2217): 	at com.google.android.photostream.PhotostreamActivity$GetPhotoListTask.doInBackground(PhotostreamActivity.java:395)
+E/AndroidRuntime( 2217): 	at com.google.android.photostream.PhotostreamActivity$GetPhotoListTask.doInBackground(PhotostreamActivity.java:389)
+E/AndroidRuntime( 2217): 	at com.google.android.photostream.UserTask$2.call(UserTask.java:188)
+E/AndroidRuntime( 2217): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+E/AndroidRuntime( 2217): 	... 3 more
+W/ActivityManager( 1549):   Force finishing activity com.google.android.photostream/.PhotostreamActivity
+W/ActivityManager( 1549):   Force finishing activity com.google.android.photostream/.LoginActivity
+D/dalvikvm( 1549): GC_FOR_ALLOC freed 268K, 43% free 6817K/11916K, paused 5ms, total 5ms
+I/dalvikvm-heap( 1549): Grow heap (frag case) to 7.863MB for 1127532-byte allocation
+D/dalvikvm( 1549): GC_FOR_ALLOC freed 1K, 40% free 7916K/13020K, paused 11ms, total 11ms
+D/dalvikvm( 1549): GC_CONCURRENT freed 12K, 39% free 8019K/13020K, paused 1ms+0ms, total 9ms
+D/EGL_emulation( 1856): eglMakeCurrent: 0xb97d0c00: ver 2 0
+D/gralloc_ranchu( 1135): gralloc_alloc: Creating ashmem region of size 651264
+D/        ( 1549): HostConnection::get() New Host Connection established 0xb96e7000, tid 1564
+W/        ( 1549): Unrecognized GLES max version string in extensions: ANDROID_EMU_CHECKSUM_HELPER_v1 
+D/EGL_emulation( 1856): eglMakeCurrent: 0xb97d0c00: ver 2 0
+E/EGL_emulation( 1856): tid 1856: eglSurfaceAttrib(1199): error 0x3009 (EGL_BAD_MATCH)
+W/HardwareRenderer( 1856): Backbuffer cannot be preserved
+D/dalvikvm( 1856): GC_FOR_ALLOC freed 4403K, 34% free 10112K/15224K, paused 3ms, total 3ms
+I/dalvikvm-heap( 1856): Grow heap (frag case) to 13.322MB for 3483660-byte allocation
+D/dalvikvm( 1856): GC_FOR_ALLOC freed 2K, 12% free 13511K/15224K, paused 3ms, total 3ms
+D/dalvikvm( 1856): GC_CONCURRENT freed 0K, 12% free 13511K/15224K, paused 2ms+0ms, total 4ms--------- beginning of /dev/log/main
+D/UIAutomatorStub( 2336): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9024, content-length=111, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": ["natural"], "jsonrpc": "2.0", "method": "setOrientation", "id": "bd78c18af52656932ca9a9586e8b7dc0"}}
+D/dalvikvm( 2336): GC_FOR_ALLOC freed 207K, 16% free 3542K/4176K, paused 3ms, total 3ms
+D/UIAutomatorStub( 2336): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9024, content-length=80, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"jsonrpc": "2.0", "method": "wakeUp", "id": "39c80cbe124bae4060613aed5063dc2c"}}
+D/dalvikvm( 2336): GC_FOR_ALLOC freed 271K, 17% free 3482K/4176K, paused 2ms, total 2ms
+D/UIAutomatorStub( 2336): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9024, content-length=101, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": [249, 172], "jsonrpc": "2.0", "method": "click", "id": "d16e82235af0584b61e8e1e234574c07"}}
+D/InteractionController( 2336): clickNoSync (249, 172)
+D/dalvikvm( 1543): GC_CONCURRENT freed 967K, 44% free 6711K/11900K, paused 0ms+0ms, total 8ms
+D/AndroidRuntime( 2363): 
+D/AndroidRuntime( 2363): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2363): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2363): CheckJNI is ON
+D/dalvikvm( 2363): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2363): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2363): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2363): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2363): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2363): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2363): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2363): failed to load memtrack module: -2
+D/AndroidRuntime( 2363): Calling main entry com.android.commands.input.Input
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_I, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_I, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_N, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_N, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/LatinIME:LogUtils( 1716): Dictionary info: dictionary = contacts.en_US.dict ; version = ? ; date = ?
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_P, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_P, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_U, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_U, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_SPACE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/LatinIME:LogUtils( 1716): Dictionary info: dictionary = main:en ; version = 42 ; date = 1381226429
+I/LatinIME:LogUtils( 1716): Dictionary info: dictionary = userunigram.en_US.dict ; version = ? ; date = ?
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_SPACE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+D/dalvikvm( 1716): GC_CONCURRENT freed 360K, 13% free 3251K/3720K, paused 1ms+1ms, total 5ms
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_E, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_E, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_X, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+D/dalvikvm( 1716): GC_FOR_ALLOC freed 283K, 14% free 3312K/3824K, paused 2ms, total 2ms
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_X, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_APOSTROPHE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_APOSTROPHE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_SHIFT_LEFT, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_LEFT_BRACKET, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_LEFT_BRACKET, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_SHIFT_LEFT, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_PERIOD, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_PERIOD, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_4, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_4, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_5, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_5, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_6, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_6, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_0, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_0, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+D/dalvikvm( 2269): GC_CONCURRENT freed 127K, 7% free 3592K/3832K, paused 1ms+1ms, total 3ms
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_2, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_2, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+I/Input   ( 2363): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=75343, downTime=75343, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2363): Shutting down VM
+D/dalvikvm( 2363): GC_CONCURRENT freed 212K, 28% free 555K/772K, paused 0ms+0ms, total 1ms
+D/UIAutomatorStub( 2336): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9024, content-length=101, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": [564, 172], "jsonrpc": "2.0", "method": "click", "id": "032fcb32714eeaf689ca36ac9af093b4"}}
+D/InteractionController( 2336): clickNoSync (564, 172)
+D/dalvikvm( 2336): GC_FOR_ALLOC freed 266K, 15% free 3567K/4176K, paused 3ms, total 3ms
+E/SoundPool( 1543): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1543): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1543): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1543): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1543): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1543): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1543): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1543): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1543): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1543): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1543): error loading /system/media/audio/ui/KeypressStandard.ogg
+W/AudioService( 1543): Soundpool could not load file: /system/media/audio/ui/KeypressStandard.ogg
+E/SoundPool( 1543): error loading /system/media/audio/ui/KeypressSpacebar.ogg
+W/AudioService( 1543): Soundpool could not load file: /system/media/audio/ui/KeypressSpacebar.ogg
+E/SoundPool( 1543): error loading /system/media/audio/ui/KeypressDelete.ogg
+W/AudioService( 1543): Soundpool could not load file: /system/media/audio/ui/KeypressDelete.ogg
+E/SoundPool( 1543): error loading /system/media/audio/ui/KeypressReturn.ogg
+W/AudioService( 1543): Soundpool could not load file: /system/media/audio/ui/KeypressReturn.ogg
+E/SoundPool( 1543): error loading /system/media/audio/ui/KeypressInvalid.ogg
+W/AudioService( 1543): Soundpool could not load file: /system/media/audio/ui/KeypressInvalid.ogg
+W/AudioService( 1543): onLoadSoundEffects(), Error -1 while loading samples
+--------- beginning of /dev/log/system
+I/ActivityManager( 1543): START u0 {act=android.intent.action.SEARCH cmp=jp.sblo.pandora.aGrep/.Search (has extras)} from pid 2269
+D/AndroidRuntime( 2269): Shutting down VM
+W/dalvikvm( 2269): threadid=1: thread exiting with uncaught exception (group=0xa4d50b20)
+I/ActivityManager( 1543): START u0 {cmp=jp.sblo.pandora.aGrep/.Settings} from pid 2269
+E/AndroidRuntime( 2269): FATAL EXCEPTION: main
+E/AndroidRuntime( 2269): Process: jp.sblo.pandora.aGrep, PID: 2269
+E/AndroidRuntime( 2269): java.lang.RuntimeException: Unable to start activity ComponentInfo{jp.sblo.pandora.aGrep/jp.sblo.pandora.aGrep.Search}: java.util.regex.PatternSyntaxException: Error in {min,max} interval near index 14:
+E/AndroidRuntime( 2269): input text'{\.345678909871231
+E/AndroidRuntime( 2269):               ^
+E/AndroidRuntime( 2269): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2195)
+E/AndroidRuntime( 2269): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)
+E/AndroidRuntime( 2269): 	at android.app.ActivityThread.access$800(ActivityThread.java:135)
+E/AndroidRuntime( 2269): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)
+E/AndroidRuntime( 2269): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 2269): 	at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 2269): 	at android.app.ActivityThread.main(ActivityThread.java:5017)
+E/AndroidRuntime( 2269): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 2269): 	at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 2269): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+E/AndroidRuntime( 2269): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+E/AndroidRuntime( 2269): 	at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 2269): Caused by: java.util.regex.PatternSyntaxException: Error in {min,max} interval near index 14:
+E/AndroidRuntime( 2269): input text'{\.345678909871231
+E/AndroidRuntime( 2269):               ^
+E/AndroidRuntime( 2269): 	at java.util.regex.Pattern.compileImpl(Native Method)
+E/AndroidRuntime( 2269): 	at java.util.regex.Pattern.compile(Pattern.java:411)
+E/AndroidRuntime( 2269): 	at java.util.regex.Pattern.<init>(Pattern.java:394)
+E/AndroidRuntime( 2269): 	at java.util.regex.Pattern.compile(Pattern.java:374)
+E/AndroidRuntime( 2269): 	at jp.sblo.pandora.aGrep.Search.onCreate(Search.java:83)
+E/AndroidRuntime( 2269): 	at android.app.Activity.performCreate(Activity.java:5231)
+E/AndroidRuntime( 2269): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+E/AndroidRuntime( 2269): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)
+E/AndroidRuntime( 2269): 	... 11 more
+D/dalvikvm( 1543): GC_FOR_ALLOC freed 232K, 43% free 6825K/11900K, paused 6ms, total 6ms
+I/dalvikvm-heap( 1543): Grow heap (frag case) to 7.851MB for 1127532-byte allocation
+D/UIAutomatorStub( 2336): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9024, content-length=117, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": [null, 1000], "jsonrpc": "2.0", "method": "waitForWindowUpdate", "id": "6266bcb764b59b045d1254b22bb92dd7"}}
+D/dalvikvm( 1543): GC_FOR_ALLOC freed 1K, 34% free 7925K/11900K, paused 7ms, total 7ms
+D/dalvikvm( 1543): GC_CONCURRENT freed <1K, 34% free 7935K/11900K, paused 1ms+2ms, total 8ms
+D/gralloc_ranchu( 1135): gralloc_alloc: Creating ashmem region of size 651264
+D/        ( 1543): HostConnection::get() New Host Connection established 0xb8ba2340, tid 1558
+W/        ( 1543): Unrecognized GLES max version string in extensions: ANDROID_EMU_CHECKSUM_HELPER_v1 
+W/ActivityManager( 1543): Activity pause timeout for ActivityRecord{a509e110 u0 jp.sblo.pandora.aGrep/.Search t4 f}--------- beginning of /dev/log/main
+D/UIAutomatorStub( 2281): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9039, content-length=111, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": ["natural"], "jsonrpc": "2.0", "method": "setOrientation", "id": "b5069c76588cc0e14c9bdd8d7bd6732f"}}
+D/dalvikvm( 2281): GC_FOR_ALLOC freed 197K, 16% free 3537K/4176K, paused 1ms, total 1ms
+D/UIAutomatorStub( 2281): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9039, content-length=80, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"jsonrpc": "2.0", "method": "wakeUp", "id": "d087ef31674b7a10496f6e4890fe12e3"}}
+D/dalvikvm( 1550): GC_CONCURRENT freed 962K, 44% free 6699K/11784K, paused 2ms+0ms, total 14ms
+D/dalvikvm( 2281): GC_FOR_ALLOC freed 195K, 16% free 3542K/4176K, paused 2ms, total 2ms
+D/UIAutomatorStub( 2281): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9039, content-length=101, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": [384, 331], "jsonrpc": "2.0", "method": "click", "id": "3934128efe72aa266bba954d51ae0d81"}}
+D/InteractionController( 2281): clickNoSync (384, 331)
+D/AndroidRuntime( 2308): 
+D/AndroidRuntime( 2308): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2308): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2308): CheckJNI is ON
+D/dalvikvm( 2308): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2308): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2308): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2308): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2308): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2308): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2308): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2308): failed to load memtrack module: -2
+D/AndroidRuntime( 2308): Calling main entry com.android.commands.input.Input
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_I, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_I, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_N, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_N, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_P, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_P, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_U, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_U, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_SPACE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_SPACE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_E, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_E, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_X, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_X, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_APOSTROPHE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_APOSTROPHE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_SHIFT_LEFT, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_LEFT_BRACKET, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_LEFT_BRACKET, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_SHIFT_LEFT, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_PERIOD, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_PERIOD, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_4, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_4, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_5, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_5, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_6, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_6, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_0, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_0, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_2, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_2, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+I/Input   ( 2308): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76306, downTime=76306, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2308): Shutting down VM
+D/dalvikvm( 2308): GC_CONCURRENT freed 212K, 28% free 555K/772K, paused 0ms+0ms, total 0ms
+D/dalvikvm( 2281): GC_FOR_ALLOC freed 275K, 17% free 3501K/4176K, paused 3ms, total 3ms
+D/UIAutomatorStub( 2281): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9039, content-length=101, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": [384, 465], "jsonrpc": "2.0", "method": "click", "id": "0ceed84e248d3809357d0401858d328d"}}
+D/InteractionController( 2281): clickNoSync (384, 465)
+D/AndroidRuntime( 2321): 
+D/AndroidRuntime( 2321): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2321): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2321): CheckJNI is ON
+D/dalvikvm( 2321): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2321): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2321): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2321): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2321): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2321): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2321): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2321): failed to load memtrack module: -2
+D/AndroidRuntime( 2321): Calling main entry com.android.commands.input.Input
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_I, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_I, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_N, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_N, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_P, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_P, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_U, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_U, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_SPACE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_SPACE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_E, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_E, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_X, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_X, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_T, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_APOSTROPHE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_APOSTROPHE, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_SHIFT_LEFT, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_LEFT_BRACKET, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_LEFT_BRACKET, scanCode=0, metaState=META_SHIFT_ON|META_SHIFT_LEFT_ON, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_SHIFT_LEFT, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_PERIOD, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_PERIOD, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_4, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_4, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_5, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_5, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_6, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_6, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_0, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_0, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_9, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_8, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_7, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_2, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_2, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_3, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+I/Input   ( 2321): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=76823, downTime=76823, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2321): Shutting down VM
+D/dalvikvm( 2321): GC_CONCURRENT freed 212K, 28% free 555K/772K, paused 1ms+0ms, total 1ms
+D/UIAutomatorStub( 2281): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9039, content-length=101, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": [384, 592], "jsonrpc": "2.0", "method": "click", "id": "329e6f1855e35ab75f904c789cdc5ba3"}}
+D/InteractionController( 2281): clickNoSync (384, 592)
+D/dalvikvm( 2281): GC_FOR_ALLOC freed 205K, 15% free 3553K/4176K, paused 4ms, total 4ms
+D/AndroidRuntime( 2217): Shutting down VM
+W/dalvikvm( 2217): threadid=1: thread exiting with uncaught exception (group=0xa4d03b20)
+E/SoundPool( 1550): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1550): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1550): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1550): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1550): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1550): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1550): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1550): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1550): error loading /system/media/audio/ui/Effect_Tick.ogg
+W/AudioService( 1550): Soundpool could not load file: /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1550): error loading /system/media/audio/ui/KeypressStandard.ogg
+W/AudioService( 1550): Soundpool could not load file: /system/media/audio/ui/KeypressStandard.ogg
+E/SoundPool( 1550): error loading /system/media/audio/ui/KeypressSpacebar.ogg
+W/AudioService( 1550): Soundpool could not load file: /system/media/audio/ui/KeypressSpacebar.ogg
+E/SoundPool( 1550): error loading /system/media/audio/ui/KeypressDelete.ogg
+W/AudioService( 1550): Soundpool could not load file: /system/media/audio/ui/KeypressDelete.ogg
+E/SoundPool( 1550): error loading /system/media/audio/ui/KeypressReturn.ogg
+W/AudioService( 1550): Soundpool could not load file: /system/media/audio/ui/KeypressReturn.ogg
+E/SoundPool( 1550): error loading /system/media/audio/ui/KeypressInvalid.ogg
+W/AudioService( 1550): Soundpool could not load file: /system/media/audio/ui/KeypressInvalid.ogg
+W/AudioService( 1550): onLoadSoundEffects(), Error -1 while loading samples
+D/gralloc_ranchu( 1135): gralloc_alloc: Creating ashmem region of size 716800
+--------- beginning of /dev/log/system
+E/AndroidRuntime( 2217): FATAL EXCEPTION: main
+E/AndroidRuntime( 2217): Process: com.tum.yahtzee, PID: 2217
+E/AndroidRuntime( 2217): java.lang.NumberFormatException: Invalid int: "345678909871231"
+E/AndroidRuntime( 2217): 	at java.lang.Integer.invalidInt(Integer.java:137)
+E/AndroidRuntime( 2217): 	at java.lang.Integer.parse(Integer.java:377)
+E/AndroidRuntime( 2217): 	at java.lang.Integer.parseInt(Integer.java:365)
+E/AndroidRuntime( 2217): 	at java.lang.Integer.parseInt(Integer.java:331)
+E/AndroidRuntime( 2217): 	at java.lang.Integer.<init>(Integer.java:102)
+E/AndroidRuntime( 2217): 	at com.tum.yahtzee.YahtzeeActivity.play(YahtzeeActivity.java:51)
+E/AndroidRuntime( 2217): 	at com.tum.yahtzee.YahtzeeActivity$1.onClick(YahtzeeActivity.java:41)
+E/AndroidRuntime( 2217): 	at android.view.View.performClick(View.java:4438)
+E/AndroidRuntime( 2217): 	at android.view.View$PerformClick.run(View.java:18422)
+E/AndroidRuntime( 2217): 	at android.os.Handler.handleCallback(Handler.java:733)
+E/AndroidRuntime( 2217): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime( 2217): 	at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 2217): 	at android.app.ActivityThread.main(ActivityThread.java:5017)
+E/AndroidRuntime( 2217): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 2217): 	at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 2217): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+E/AndroidRuntime( 2217): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+E/AndroidRuntime( 2217): 	at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager( 1550):   Force finishing activity com.tum.yahtzee/.YahtzeeActivity
+D/        ( 1550): HostConnection::get() New Host Connection established 0xb8e46760, tid 1656
+W/        ( 1550): Unrecognized GLES max version string in extensions: ANDROID_EMU_CHECKSUM_HELPER_v1 
+D/dalvikvm( 1550): GC_FOR_ALLOC freed 245K, 40% free 7097K/11784K, paused 5ms, total 5ms
+D/UIAutomatorStub( 2281): URI: /jsonrpc/0, Method: POST, Header: {content-type=application/json, connection=close, remote-addr=127.0.0.1, host=localhost:9039, content-length=117, http-client-ip=127.0.0.1, user-agent=Python-urllib/2.7, accept-encoding=identity}, params, {NanoHttpd.QUERY_STRING=null}, files: {postData={"params": [null, 1000], "jsonrpc": "2.0", "method": "waitForWindowUpdate", "id": "c8ca6c4c09324f36f44567251536b0d2"}}
+D/dalvikvm( 1550): GC_FOR_ALLOC freed 14K, 36% free 7582K/11784K, paused 6ms, total 6ms
+I/dalvikvm-heap( 1550): Grow heap (frag case) to 8.590MB for 1127532-byte allocation
+D/dalvikvm( 1550): GC_FOR_ALLOC freed <1K, 33% free 8682K/12888K, paused 5ms, total 5ms
+D/dalvikvm( 1550): GC_CONCURRENT freed 0K, 33% free 8682K/12888K, paused 1ms+0ms, total 5ms
+D/gralloc_ranchu( 1135): gralloc_alloc: Creating ashmem region of size 651264
+D/        ( 1550): HostConnection::get() New Host Connection established 0xb8df6560, tid 1565
+W/        ( 1550): Unrecognized GLES max version string in extensions: ANDROID_EMU_CHECKSUM_HELPER_v1 
+D/dalvikvm( 2281): GC_FOR_ALLOC freed 197K, 15% free 3553K/4176K, paused 4ms, total 4ms
+W/ActivityManager( 1550): Activity pause timeout for ActivityRecord{a506f0e0 u0 com.tum.yahtzee/.YahtzeeActivity t4 f}
+D/EGL_emulation( 1878): eglMakeCurrent: 0xb8d5f560: ver 2 0
+D/EGL_emulation( 1878): eglMakeCurrent: 0xb8d5f560: ver 2 0
+E/EGL_emulation( 1878): tid 1878: eglSurfaceAttrib(1199): error 0x3009 (EGL_BAD_MATCH)
+W/HardwareRenderer( 1878): Backbuffer cannot be preserved
+D/dalvikvm( 1878): GC_FOR_ALLOC freed 4554K, 34% free 10114K/15304K, paused 2ms, total 2ms
+I/dalvikvm-heap( 1878): Grow heap (frag case) to 13.304MB for 3483660-byte allocation
+D/dalvikvm( 1878): GC_FOR_ALLOC freed 4K, 12% free 13511K/15304K, paused 2ms, total 2ms
+D/dalvikvm( 1878): GC_CONCURRENT freed <1K, 12% free 13511K/15304K, paused 1ms+1ms, total 4ms
